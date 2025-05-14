@@ -21,10 +21,11 @@ body {
 .subtitulo {
     color: white;
     font-size: 36px;
-    
+
 }
 
-.tarjetas {
+.tarjetas,
+.tarjetas-ataques {
     display: flex;
     gap: 10px;
 }
@@ -62,4 +63,73 @@ body {
 input {
     display: none;
 
+}
+
+input:checked + label{
+    background-color: hotpink;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background: #9EBC8A;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: black;
+    font-family: "Roboto Mono", monospace;
+}
+
+
+#mensajes {
+    width: 280px;
+    background: #BBFBFF;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto Mono", monospace;
+
+}
+
+#boton-reiniciar {
+    border: none;
+    color: hotpink;
+    font-family: "Roboto Mono", monospace;
+
+}
+
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-items: center;
+}
+
+#vidas-jugador,
+#vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador,
+.ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+
+    .tarjetas,
+    .tarjetas-ataques {
+        flex-direction: column;
+    }
 }
