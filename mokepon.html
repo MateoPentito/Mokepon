@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mokepon</title>
-    <script src="./js/mokepon.js"></script>
+
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -18,43 +18,7 @@
         <h2 class="subtitulo">Elige a tu mascota: </h2>
 
 
-        <div class="tarjetas">
-            <input type="radio" name="mascota" id="Hipodoge">
-            <label class="tarjeta-de-mokepon" for="Hipodoge">
-                <p>Hipodoge</p>
-                <img src="./assets/mokepons_mokepon_hipodoge_attack.webp" alt="Hipodoge">
-            </label>
-
-            <input type="radio" name="mascota" id="Capipepo">
-            <label class="tarjeta-de-mokepon" for="Capipepo">
-                <p>Capipepo</p>
-                <img src="./assets/mokepons_mokepon_capipepo_attack.webp" alt="Capipepo">
-            </label>
-
-            <input type="radio" name="mascota" id="Ratigueya">
-            <label class="tarjeta-de-mokepon" for="Ratigueya">
-                <p>Ratigueya</p>
-                <img src="./assets/mokepons_mokepon_ratigueya_attack.webp" alt="Ratigueya">
-            </label>
-
-            <input type="radio" name="mascota" id="Langostelvis">
-            <label class="tarjeta-de-mokepon" for="Langostelvis">
-                <p>Langostelvis</p>
-                <img src="./assets/mokepons_mokepon_langostelvis_attack.png" alt="Langostelvis">
-            </label>
-
-            <input type="radio" name="mascota" id="Tucapalma">
-            <label class="tarjeta-de-mokepon" for="Tucapalma">
-                <p>Tucapalma</p>
-                <img src="./assets/mokepons_mokepon_tucapalma_attack.png" alt="Tucapalma">
-            </label>
-
-            <input type="radio" name="mascota" id="Pydos">
-            <label class="tarjeta-de-mokepon" for="Pydos">
-                <p>Pydos</p>
-                <img src="./assets/mokepons_mokepon_pydos_attack.png" alt="Pydos">
-            </label>
-
+        <div id="contenedor-tarjetas" class="tarjetas">
         </div>
 
 
@@ -69,11 +33,7 @@
         <h2 class="subtitulo">Elige tu ataque: </h2>
 
 
-        <div class="tarjetas-ataques">
-            <button id="boton-fuego" class="boton-de-ataque">Fuego🔥</button>
-            <button id="boton-agua" class="boton-de-ataque">Agua💧</button>
-            <button id="boton-tierra" class="boton-de-ataque">Tierra🌿</button>
-        </div>
+        <div id="contenedor-ataques" class="tarjetas-ataques">s</div>
 
 
         <div id="mensajes">
@@ -104,7 +64,7 @@
 
 
 
-
+    <script src="./js/mokepon.js"></script>
 </body>
 
 </html>
